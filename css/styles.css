@@ -1,0 +1,46 @@
+/*Ini File CSS*/
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo-icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://fastly.picsum.photos/id/1012/200/200.jpg?hmac=kENwT0f1ecqbPzBGAw3ITKIrm1xoJdF0oh5tq6nosuM);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+}
+
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: auto;
+    display: flex;
+    border-radius: 12px;
+}
+
+.banner-image {
+    height: 450px;
+    background-image: url(https://picsum.photos/0);
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    height: 500px;
+}
+
+.footer {
+    text-align: center;
+}
