@@ -3,10 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>MY PORTOFOLIO</title>
 
         <!--CSS-->
         <link rel="stylesheet" href="css\styles.css">
+
     </head>
 
     <body>
@@ -20,11 +21,11 @@
 
             <!--Navigation-->
 
-            <nav>
+            <nav class= "flex-container">
                 <a href="#home-page"> Home</a>
+                <a href="#about-me"> About Me</a>
                 <a href="#my-profile"> My Profile</a>
-                <a href="#portfolio"> Portfolio</a>
-                <a href="#messege-us"> Messege Us</a>
+                <a href="#messege-me"> Send Messege</a>
 
             </nav>
         </header>
@@ -37,42 +38,105 @@
             <section>
                 <!--Title-->
                 <header id="home-page"> 
-                   <h1>Hi<span id="user-greeting>"> User</span>, welcome to my first website</h1>
-                    <p>Lorem ipsum sit amet adipiscing..</p>
+
+
+                <form method="post" name="messege-form" onsubmit="return validateForm()">
+                    <input type="text" placeholder="Nama anda" id="name-input" name="messege-form" required>
+                    <button id="submit" type="submit">Kirim</button>
+                    <p id="error-name"></p>
+                </form>
+                    
+    
+                    <h1> Hi there<span id="name-input"></span>, let's see My Portofolio!</h1>
+                    <script src="js\script.js"></script>
                 </header>
 
-                <div class="banner-image">
+            <div class="banner-img">
+            </div>
 
-                </div>
             </section>
+            <hr>
 
-            <!--Our Profile-->
+             <!--About Me-->
+             <section>
+                <header id="about-me">
+                    <h1>About Me</h1>
+
+                    <p>
+                        Halo, perkenalkan saya hanyalah seorang anak SMA 
+                        yang iseng mendaftar course ini, dan sekarang telah 
+                        mendapat banyak pengalaman dan pelajaran. <br>
+                        Awalnya saya sama sekali tidak bisa
+                        membuat website, namun saat ini saya telah dapat membuat website yang memang
+                        tidak bisa dikatakan sangat bagus. Tetapi, ini adalah website terbaik yang pernah saya 
+                        buat.
+                    </p>
+
+                    
+                </header>
+            </section>
+            
+            <hr>
+
+            <!--My Profile-->
             <section>
                  <!--Title-->
                 <header id="my-profile">
                     <h1>My Profile</h1>
                 </header>
 
-                <div class="content"></div>
-            </section>
+                <div class="profile">
+                <p>
+                    Nama: Bianca Chrysilla Rustandi <br>
+                    Status Pendidikan: Sekolah Menegah Atas<br>
+                    Email: bianca.chrysilla@gmail.com <br>
+                    Hobi: Main basket dan membaca novel <br>
+                    Quotes: If you can't find a way, create one <br>
 
-            <!--Portfolio-->
-            <section>
-                <header id="portfolio">
-                    <h1>Portfolio</h1>
-                </header>
+                </p>
+                </div>
 
-                <div class="content"></div>
-
-            </section>
+                    <img src="Profile.jpeg">
             
-            <!--Messege Us-->
+            </section>
+
+            <hr>
+
+            <!--Send Messege-->
             <section>
-                <header id="messege-us">
-                    <h1>Messege Us</h1>
+                <header id="messege-me">
+                    <h1>Send Messege</h1>
                 </header>
 
-                <div class="content"></div>
+                <div class="form">
+                    <form method="post">
+                        <label for="name" required>Nama : </label>
+                        <input id="name"type="text" name="nama" placeholder="Nama" required/>
+
+                        <br>
+
+                        <label for="ultah">Tanggal Lahir : </label>
+                        <input id="ultah"type="date"/>
+
+                        <br>
+
+                        <label for="jenis-kelamin">Jenis Kelamin : </label>
+                        <input type="radio" id="cowo" name="jenis-kelamin" value="cowo">
+                        <label for="cowo"> Laki-laki</label>
+
+                        <input type="radio" id="cewe" name="jenis-kelamin" value="cewe">
+                        <label for="cewe"> Perempuan</label>
+                        <br>
+
+                        <textarea placeholder="Pesan"></textarea>
+                        
+
+                        <br/>
+                        
+                        <button id="submit" type="submit">Kirim</button>
+
+                    </form>
+                </div>
 
             </section>
 
@@ -83,5 +147,8 @@
         <footer class="footer">
             <p>&copy; 2025 - All rights reserved</p>
         </footer>
+
+        <script src="js\script.js"></script>
+    
     </body>
 </html>

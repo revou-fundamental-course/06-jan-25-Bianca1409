@@ -1,11 +1,22 @@
 /*Ini File CSS*/
 
+
+body{
+    background-color: rgb(105, 132, 176);
+}
+
 .main-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.banner-img {
+    height: 450px;
+    background-image:url(https://fastly.picsum.photos/id/830/1000/1000.jpg?hmac=niuEzXeNsYG3uerDur6qmRGymIsmu3lu4nXXtpa0WLc);
+    background-position: center;
+    background-size: cover;
+}
 
 .logo-icon {
     border-radius: 50%;
@@ -18,21 +29,27 @@
 
 
 
-nav
+.flex-container {
     display: flex;
-    border: 1px solid;
-    padding: 8px;
-    color: black;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     text-decoration: auto;
-    display: flex;
-    border-radius: 12px;
 }
 
-.banner-image {
-    height: 450px;
-    background-image: url(https://picsum.photos/0);
-    background-size: cover;
-    background-position: center;
+nav > a {
+    color: black;
+    cursor: pointer;
+    text-decoration: auto;
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 15px;
+    align-items: center;
+}
+
+.img-slideshow {
+    height: 200px;
+    align-items: center
 }
 
 .content {
@@ -42,3 +59,38 @@ nav
 .footer {
     text-align: center;
 }
+
+
+@media only screen and (max-width: 600px){
+    .main-header {
+        flex-direction: column;
+    }
+
+    .flex-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo-icon{
+        margin-bottom: 14px
+    }
+}
+
+
+img {
+    height: 300px;
+    border-radius: 20px;
+}
+
+p {
+    font-family: 'Lucida Sans';
+    font-size: larger;
+
+}
+
+.form {
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+
+}
+    
