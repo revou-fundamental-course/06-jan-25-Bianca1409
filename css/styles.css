@@ -18,7 +18,8 @@
 
 
 
-nav>a {
+nav
+    display: flex;
     border: 1px solid;
     padding: 8px;
     color: black;
